@@ -1,0 +1,2 @@
+image: notpez1/vat:<+pipeline.sequenceId>
+replicas: 1
