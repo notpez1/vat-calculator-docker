@@ -39,13 +39,17 @@ function App() {
       VAT CALCULATOR
       <div className='colour-border'>
         <VatRateField customstyle="field" vatRateChanged={handleVatRateChanged} value={vatRate} updatePrices={updatePrices} />
-        <PriceEntryField customstyle="field" label="Please enter price excl VAT: " priceChanged={handleNetPriceChange} price={netPrice === 0.0 ? "" : netPrice} />
+        <PriceEntryField customstyle="field" label="Please now enter price excl VAT: " priceChanged={handleNetPriceChange} price={netPrice === 0.0 ? "" : netPrice} />
         <DisplayBlock customstyle="field" label="The amount of VAT you will pay is: " value={vatToPay} />
         <PriceEntryField customstyle="field" label="And so the total price you will pay is: " priceChanged={handleGrossPriceChange} price={grossPrice === 0.0 ? "" : grossPrice} />
       </div>
+
     </div>
   );
 }
+
+
+
 
 export default App;
 
